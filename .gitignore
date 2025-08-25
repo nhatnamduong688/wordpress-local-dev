@@ -30,8 +30,10 @@ wp-content/uploads/
 wp-content/plugins/akismet/
 wp-content/plugins/hello.php
 
-# Themes (keep your custom themes, ignore default ones)
+# Themes (keep your custom themes, ignore default ones except customizations)
 wp-content/themes/twenty*/
+!wp-content/themes/twentytwentyfive/functions.php
+!wp-content/themes/twentytwentyfive/parts/header.html
 
 # Node modules and build files
 node_modules/
