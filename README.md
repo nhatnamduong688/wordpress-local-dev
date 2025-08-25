@@ -1,6 +1,64 @@
-# WordPress Local Development Setup
+# 🎨 WordPress Gallery Website - Local Development Setup
 
-Một WordPress site được cài đặt và cấu hình hoàn chỉnh cho môi trường development local.
+> **A complete WordPress 6.8.2 setup for art gallery websites with custom navigation and content structure**
+
+Một WordPress site được cài đặt và cấu hình hoàn chỉnh cho phòng triển lãm nghệ thuật, bao gồm navigation menu tùy chỉnh và cấu trúc nội dung chuyên nghiệp.
+
+[![WordPress](https://img.shields.io/badge/WordPress-6.8.2-blue.svg)](https://wordpress.org/)
+[![PHP](https://img.shields.io/badge/PHP-8.4.11-purple.svg)](https://php.net/)
+[![MySQL](https://img.shields.io/badge/MySQL-9.4.0-orange.svg)](https://mysql.com/)
+[![License](https://img.shields.io/badge/License-GPL%20v2-green.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
+
+## 🌟 **Features**
+
+- ✨ **Custom Navigation Menu** - Artwords & Artists sections
+- 🎨 **Gallery-focused Content Structure** - Perfect for art exhibitions
+- 🔗 **Clean URLs** - `/artwords/` and `/artists/` 
+- 📱 **Responsive Design** - Mobile-friendly navigation
+- ⚡ **Fast Setup** - Ready in 5 minutes
+- 🛠️ **WP-CLI Integration** - Command-line management
+
+## 🚀 **Quick Start**
+
+```bash
+# Clone the repository
+git clone https://github.com/nhatnamduong688/wordpress-local-dev.git
+cd wordpress-local-dev
+
+# Install dependencies (macOS)
+brew install php mysql wp-cli
+
+# Start services
+brew services start mysql
+
+# Create database
+mysql -u root -e "CREATE DATABASE wordpress_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+mysql -u root -e "CREATE USER 'wp_user'@'localhost' IDENTIFIED BY 'wp_password123';"
+mysql -u root -e "GRANT ALL PRIVILEGES ON wordpress_db.* TO 'wp_user'@'localhost';"
+
+# Start WordPress
+php -S localhost:8080
+```
+
+**🌐 Access your gallery website:** http://localhost:8080
+
+## 📸 **What's Included**
+
+### 🎨 **Artworks Section** (`/artwords/`)
+- 8 professionally written blog posts about art
+- Topics: Color Theory, Digital Art, Minimalism, Street Art, Sculpture, Photography
+- Rich content with artist quotes and exhibition details
+
+### 👥 **Artists Section** (`/artists/`)
+- 2 detailed artist profiles
+- Maria Rodriguez (Abstract Expressionism)
+- James Chen (Digital Art Pioneer)
+- Complete biographies and exhibition histories
+
+### 🧭 **Navigation Menu**
+- Clean, responsive header navigation
+- Professional styling with hover effects
+- Mobile-friendly design
 
 ## 📋 Thông tin Project
 
