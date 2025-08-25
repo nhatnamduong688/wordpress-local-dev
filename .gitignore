@@ -1,0 +1,71 @@
+# WordPress Core Files
+wp-admin/
+wp-includes/
+wp-*.php
+xmlrpc.php
+index.php
+
+# Configuration files
+wp-config.php
+wp-config-sample.php
+
+# Database
+*.sql
+*.sqlite
+
+# Logs
+*.log
+error_log
+debug.log
+
+# Cache
+*cache/
+wp-content/cache/
+wp-content/advanced-cache.php
+
+# Uploads (optional - comment out if you want to track uploads)
+wp-content/uploads/
+
+# Plugins (optional - comment out if you want to track specific plugins)
+wp-content/plugins/akismet/
+wp-content/plugins/hello.php
+
+# Themes (keep your custom themes, ignore default ones)
+wp-content/themes/twenty*/
+
+# Node modules and build files
+node_modules/
+npm-debug.log
+.npm
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+wp-cli.phar
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*.backup
